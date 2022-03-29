@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-size: 3.6rem;
+    padding-bottom: 1.5%;
+}
+h2{
+    font-size: 2.25rem;
+    padding-bottom: 5%;
+}
+h3{
+    color: rgb(255, 239, 234);
+    font-size: 2rem;
+    width: 30%;
+    padding: 2%;
+}
+h5{
+    font-size: 1.1rem;
+    padding-left: 1.5%;
+}
+h6{
+    margin: 15%;
+    font-size: 1.2rem;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*  HEADER */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+header li a{
+    color: rgb(35, 44, 81);
+}
+header li a:hover{
+    color: rgb(143, 148, 167);
+}
+.start{
+    background-color: rgb(242, 95, 58);
+    color: rgb(255, 239, 234);
+    border: none;
+    border-radius: 60px;
+    box-shadow: 0px 5px 8px rgba(242, 95, 58, 0.523) ;
+    padding: 15px 25px;
+}
+.start:hover{
+    background-color: rgba(242, 95, 58, 0.646);
+}
+
+/*  ------ MAIN ------ */
+/* Section 1 - principal  */
+#pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pricing div.columna, #product div.columna{
+    width: 50%;
+    padding-right: 3%;
+}
+#pricing div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 7%;
+}
+#pricing div:nth-child(2){
+    text-align: center;
+}
+#pricing p, #product p{
+    font-size: 1.1rem;
+    color: rgb(143, 148, 167);
+}
+#pricing .start{
+    margin-top: 1.5%
+}
+
+/* Section 2 - articulos */
+#product{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#product div.columna:nth-child(1){
+    padding-left: 7%;
+}
+article{
+    padding-bottom: 2%;
+}
+article div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+strong{
+    background-color: rgb(242, 95, 58);
+    color: rgb(255, 239, 234);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+article p{
+    padding-left: 9%;
+    padding-top: 2%;
+}
+
+/* Section 3 - cards */
+#comunity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+#comunity div{
+    display: flex;
+
+}
+#comunity div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2%;
+    margin: 2%;
+    background-color: rgb(249, 249, 249);
+}
+#comunity div div p{
+    color: rgb(143, 148, 167);
+}
+#comunity div div img{
+    position: absolute;
+    top: -45px;
+    height: 90px;
+    width: 90px;
+}
+/* Section 4 - barra naranja*/
+#careers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(242, 95, 58);
+    margin-top: 5%;
+}
+#careers .start{
+    background-color: rgb(255, 239, 234);
+    color: rgb(242, 95, 58);
+    box-shadow: 0px 5px 8px rgba(117, 41, 22, 0.523);
+}
+
+/*  FOOTER */
+footer{
+    background-color: rgb(29, 30, 37);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 30vh;
+}
+/* footer logo - iconos */
+footer div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer div div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30%;
+}
+/* footer nav */
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding-top: 4.3%;
+}
+footer nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+footer nav ul li{
+    margin-bottom: 13%;
+}
+footer nav ul:nth-child(2) li{
+    margin-bottom: 9%;
+}
+footer nav a{
+    color: rgb(255, 239, 234);
+    font-weight: 300;
+}
+/* footer input */
+footer div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer label{
+    display: none;
+}
+footer input{
+    border: none;
+    padding: 15px 25px;
+    border-radius: 60px;
+}
+footer .start{
+    box-shadow: none;
+}
+/* footer copyright */
+footer p{
+    position: absolute;
+    bottom: 12%;
+    right: 10%;
+    color: rgb(143, 148, 167);
+    font-size: 0.8rem;
+}
+
+/*  Medias querys */
+
+
+
