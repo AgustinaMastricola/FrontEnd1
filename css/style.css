@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&display=swap');
 
+/* Globales */
 *{
     margin: 0%;
     box-sizing: border-box;
@@ -9,26 +10,24 @@ body{
     font-weight: 500;
 }
 h1{
+    color: rgb(35, 44, 81);
     font-size: 3.6rem;
-    padding-bottom: 1.5%;
 }
-h2{
-    font-size: 2.25rem;
-    padding-bottom: 5%;
+h2, h3{
+    color: rgb(35, 44, 81);
+    font-size: 2.6rem;
 }
-h3{
+h4{
     color: rgb(255, 239, 234);
-    font-size: 2rem;
-    width: 30%;
-    padding: 2%;
+    font-size: 2.5rem;
+    width: 500px;
 }
-h5{
-    font-size: 1.1rem;
-    padding-left: 1.5%;
+h5, h6{
+    color: rgb(35, 44, 81);
+    font-size: 1.5rem;
 }
 h6{
-    margin: 15%;
-    font-size: 1.2rem;
+    margin: 25px 0;
 }
 li{
     list-style-type: none;
@@ -38,25 +37,33 @@ a{
 }
 
 /*  HEADER */
+
+/* navbar - OK */
 header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2%;
+    padding: 50px 72px;
 }
-header ul{
+header nav a img{
+    display: block;
+}
+header nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 50%;
 }
-header li a{
+header nav ul li a{
+    font-size: 1.1rem;
     color: rgb(35, 44, 81);
 }
-header li a:hover{
+header nav ul li a:hover{
     color: rgb(143, 148, 167);
 }
+/* Botones naranjas con fondo claro */
 .start{
+    font-size: 1rem;
     background-color: rgb(242, 95, 58);
     color: rgb(255, 239, 234);
     border: none;
@@ -70,74 +77,80 @@ header li a:hover{
 
 /*  ------ MAIN ------ */
 main{
-    padding: 5%;
+    padding: 72px;
 }
 /* Section 1 - principal  */
-#pricing{
+#section1{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 148px);
 }
-#pricing div.columna, #product div.columna{
+#section1 div{
     width: 50%;
 }
-#pricing div:nth-child(1){
+#section1 div:nth-child(1){
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-#pricing div:nth-child(2){
+#section1 div:nth-child(2){
     text-align: center;
 }
-#pricing p, #product p{
-    font-size: 1.1rem;
-    color: rgb(143, 148, 167);
-}
-#pricing .start{
-    margin-top: 1.5%
+#section1 div p{
+    font-size: 1.3rem;
+    padding: 30px 150px 30px 0;
 }
 
+
 /* Section 2 - articulos */
-#product{
+#section2{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    height: 90vh;
 }
-#product div:nth-child(1){
-    padding: 5%;
+.first-sec2, .second-sec2{
+    width: 50%;
 }
-article{
-    padding-bottom: 2%;
+.first-sec2 p{
+    font-size: 1.3rem;
+    padding: 30px 150px 30px 0px;
+}
+article p{
+    font-size: 1.3rem;
+    padding: 25px 0px 30px 120px;
+    color: rgb(143, 148, 167);
 }
 article div{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
+}
+article h5{
+    padding-left: 30px;
 }
 strong{
     background-color: rgb(242, 95, 58);
     color: rgb(255, 239, 234);
-    padding: 5px 15px;
-    border-radius: 20px;
-}
-article p{
-    padding-left: 9%;
-    padding-top: 2%;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-size: 1.3rem;
 }
 
 /* Section 3 - cards */
-#comunity{
+#section3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
 }
-#comunity div{
+#section3 div{
     display: flex;
-
+    margin-top: 90px;
 }
-#comunity div div{
+#section3 div div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,29 +160,29 @@ article p{
     margin: 2%;
     background-color: rgb(249, 249, 249);
 }
-#comunity div div p{
+#section3 div div p{
     color: rgb(143, 148, 167);
 }
-#comunity div div img{
+#section3 div div img{
     position: absolute;
     top: -45px;
     height: 90px;
     width: 90px;
 }
 /* Section 4 - barra naranja*/
-#careers{
+#section4{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(242, 95, 58);
-    margin-top: 5%;
+    height: 200px;
 }
-#careers .start{
+#section4 .start{
     background-color: rgb(255, 239, 234);
     color: rgb(242, 95, 58);
     box-shadow: 0px 5px 8px rgba(117, 41, 22, 0.523);
 }
-#careers .start:hover{
+#section4 .start:hover{
     box-shadow: 0px 5px 8px rgba(187, 169, 164, 0.523)
 }
 
@@ -180,7 +193,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     position: relative;
-    height: 30vh;
+    padding: 30px 52px;
 }
 /* footer logo - iconos */
 footer div{
@@ -188,12 +201,15 @@ footer div{
     flex-direction: column;
     justify-content: space-between;
 }
+footer div a img{
+    width: 200px;
+}
 footer div div{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30%;
+    padding-top: 60px;
 }
 footer div div a{
     color: rgb(255, 239, 234);
@@ -207,20 +223,18 @@ footer nav{
     justify-content: space-between;
     align-items: flex-start;
     height: 100%;
-    padding-top: 4.3%;
+    width: 350px;
 }
 footer nav ul{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
+    padding: 40px 0px;
     height: 100%;
 }
-footer nav ul li{
-    margin-bottom: 13%;
-}
-footer nav ul:nth-child(2) li{
-    margin-bottom: 9%;
+footer nav ul li:nth-child(1), footer nav ul li:nth-child(2), footer nav ul li:nth-child(3){
+    margin-bottom: 10px;
 }
 footer nav a{
     color: rgb(255, 239, 234);
@@ -234,6 +248,8 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    align-self: flex-start;
+    padding-top: 45px;
 }
 form label{
     display: none;
@@ -245,13 +261,13 @@ form input{
 }
 form .start{
     box-shadow: none;
-    margin-left: 1% ;
+    margin-left: 15px ;
 }
 /* footer copyright */
 footer p{
     position: absolute;
-    bottom: 12%;
-    right: 10%;
+    bottom: 20px;
+    right: 135px;
     color: rgb(143, 148, 167);
     font-size: 0.8rem;
 }
