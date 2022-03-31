@@ -48,6 +48,9 @@ header nav{
 header nav a img{
     display: block;
 }
+.menuDesplegable{
+    display: none;
+}
 header nav ul{
     display: flex;
     justify-content: space-around;
@@ -127,6 +130,9 @@ article div{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    background-color: rgba(242, 95, 58, 0.129);
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
 }
 article h5{
     padding-left: 30px;
@@ -274,6 +280,149 @@ footer p{
 
 
 /*  Medias querys */
+
+@media(max-width: 900px){
+/*    GLOBALES  */
+    html{
+        font-size: 12px;
+    }
+    h1, h2{
+        text-align: center;
+        font-size: 2.9rem;
+    }
+    h2{
+        text-align: center;
+        font-size: 2.4rem;
+    }
+    h6{
+        padding-top: 15px;
+    }
+    p{
+        font-weight: 400;
+        line-height: 25px;
+    }
+/*    HEADER */
+    header nav ul, header .start{
+        display: none;
+    }
+    header nav{
+        padding: 20px 42px;
+    }
+    .menuDesplegable{
+        display: block;
+    }
+    .menuDesplegable:hover{
+        box-shadow: 2px 2px 2px 2px rgba(35, 44, 81, 0.523);
+        cursor: pointer;
+    }
+/*    MAIN */
+    main{
+        padding: 30px;
+    }
+/* Section1  */
+    #section1{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    #section1 div, .first-sec2{
+        width: 100%;
+    }
+    #section1 img{
+        width: 307px;
+    }
+    #section1 div:nth-child(1){
+        align-items: center;
+    }
+    #section1 div p{
+        padding: 20px;
+        text-align: center;
+        color: rgb(143, 148, 167);
+    }
+
+/*   SECTION 2 */
+    #section2{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+    }
+    .first-sec2, .second-sec2{
+        width: 100%;
+    }
+    .first-sec2 p{
+        padding: 20px;
+        text-align: center;
+        color: rgb(143, 148, 167);
+    }
+    article p{
+        font-size: 1.2rem;
+        padding: 25px 0px 30px 0px;
+        color: rgb(143, 148, 167);
+    }
+    article h5{
+        padding: 0 10px;
+        font-size: 1.15rem;
+    }
+    strong{
+        padding: 10px 20px;
+        font-size: 1.15rem;
+    }
+
+/*   SECTION 3 */
+    #section3{
+        margin-top: 50px;
+    }
+    #section3 div div:nth-child(1), #section3 div div:nth-child(3){
+        display: none;
+    }
+    #section3 div div:nth-child(2){
+        padding: 20px;
+    }
+    #section3 div div p{
+        text-align: center;
+    }
+
+/*    SECTION 4  */
+    #section4{
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+    }
+    h4{
+        width: auto;
+        padding: 30px 50px;
+        text-align: center;
+    }
+
+/*    FOOTER */
+    footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 30px
+    }
+    form{
+        padding: 0%;
+        width: 315px;
+    }
+    footer nav{
+        width: 250px;
+    }
+    footer div{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    footer div div{
+        padding-top: 0%;
+        width: 250px;
+    }
+    footer p{
+        bottom: 10px;
+        right: 93.75px;
+    }
+    footer div:nth-of-type(1){
+        margin-bottom: 50px;
+    }
+}
 
 
 
