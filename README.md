@@ -17,6 +17,8 @@ La consigna consistia en cumplir los siguientes requerimientos:
 
 ## Diseño
 El diseño fue brindado por el equipo docente, utilizando Figma. Y debíamos replicarlo lo más parecido, haciendo uso de buenas practicas.
+![](/imagenes/desktop-design.jpg)
+![](/imagenes/mobile-design.jpg)
 
 
 
