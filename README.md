@@ -20,6 +20,8 @@ El diseño fue brindado por el equipo docente, utilizando Figma. Y debíamos rep
 ![](/imagenes/desktop-design.jpg)
 ![](/imagenes/mobile-design.jpg)
 
+### Autor ✒️
+- Agustina Mastrícola
 
 
 
